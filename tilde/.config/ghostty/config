@@ -1,6 +1,5 @@
-font-family = MonoLisa
-font-style = MonoLisa
-font-size = 15
+font-family = 'FiraCode Nerd Font'
+font-size = 13
 
 # Disable ligatures and configure font features
 font-feature = calt
@@ -9,7 +8,6 @@ font-feature = -liga
 font-feature = zero
 font-feature = ss01
 
-theme = Squirrelsong Dark
 minimum-contrast = 1.1
 macos-icon = custom-style
 macos-titlebar-style = tabs

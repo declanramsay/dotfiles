@@ -9,8 +9,8 @@ else
   exit 0
 fi
 
-COMPUTERNAME='Nick M1 Air'
-LOCALHOSTNAME='nickmac.air'
+COMPUTERNAME='Dec Ramsay M2'
+LOCALHOSTNAME='decmac'
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change

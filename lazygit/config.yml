@@ -3,9 +3,9 @@ gui:
   expandFocusedSidePanel: true
   nerdFontsVersion: "3"
   authorColors:
-    "Nick Khan": "magenta"
-    "Nick S. Khan": "magenta"
-    "Nick Plekhanov": "magenta"
+    "Dec Ramsay": "magenta"
+    "declanramsay": "magenta"
+    "Declan Ramsay": "magenta"
   theme:
     activeBorderColor:
       - magenta

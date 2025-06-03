@@ -3,12 +3,12 @@
 # general config
 
 [user]
-  name = Nick Plekhanov
-  email = nicksp@users.noreply.github.com
-  signingKey = 77258BB2E99B579D
+  name = Dec Ramsay
+  email = declandr@gmail.com
+  # signingKey = 77258BB2E99B579D
 
 [github]
-  user = nicksp
+  user = declanramsay
 
 [init]
   defaultBranch = main
@@ -68,12 +68,12 @@
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:nicksp/"]
-  insteadOf = "git://github.com/nicksp/"
+[url "git@github.com:declanramsay/"]
+  insteadOf = "git://github.com/declanramsay/"
 
 # When accidentally cloning the HTTPS version of a repository instead of the SSH version
-[url "git@github.com:nicksp/"]
-  insteadOf = "https://github.com/nicksp/"
+[url "git@github.com:declanramsay/"]
+  insteadOf = "https://github.com/declanramsay/"
 
 [protocol "file"]
   # Always permit operations using file protocol without any restrictions or warnings
@@ -161,6 +161,8 @@
   amend        = commit --amend --no-edit
   # Add all modified files to the latest commit
   append       = commit -a --amend --no-edit
+  cam          = commit -a -m
+  dad          = !curl -H \"Accept: text/plain\" https://icanhazdadjoke.com/ && git add
 
   # Branching
   br           = branch

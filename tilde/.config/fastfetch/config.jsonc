@@ -15,20 +15,20 @@
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[1mNick Khan\u001b[0m",
+      "format": "\u001b[1mDec Ramsay\u001b[0m",
     },
     "separator",
     {
       "type": "custom",
       "key": "URL",
       "keyColor": "yellow",
-      "format": "https://nikkhan.com",
+      "format": "https://declanramsay.com",
     },
     {
       "type": "custom",
       "key": "Font",
       "keyColor": "yellow",
-      "format": "MonoLisa",
+      "format": "FiraCode",
     },
     {
       "type": "os",

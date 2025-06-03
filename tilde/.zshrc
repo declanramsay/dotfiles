@@ -6,6 +6,8 @@ source $HOME/dotfiles/zsh/aliases.zsh
 source $HOME/dotfiles/zsh/completion.zsh
 source $HOME/dotfiles/zsh/key-bindings.zsh
 
+eval "$(starship init zsh)"
+
 # Load plugins
 source $HOME/dotfiles/zsh/plugins/zsh-shift-select.plugin.zsh
 
