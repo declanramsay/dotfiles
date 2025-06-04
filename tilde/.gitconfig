@@ -30,11 +30,13 @@
   pager = delta
   autocrlf = input
   safecrlf = false
-  excludesFile = ~/.gitignore
+	excludesfile = /Users/dec.ramsay/.gitexclude
   quotePath = false
   # Make `git rebase` safer on macOS
   # More info: https://www.git-tower.com/blog/make-git-rebase-safe-on-osx/
   trustctime = false
+	fsmonitor = true
+	untrackedcache = true
 
 [help]
   # Correct typos
@@ -335,3 +337,17 @@
 
 [include]
   path = ~/.gitconfig.local
+
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIODmg40Ljc6702cAkF6bkOw4Sp+5Ne7P3Q26qS/MPHcW
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
+[url "ssh://git@gitlab.personio-internal.de/"]
+	insteadOf = https://gitlab.personio-internal.de/

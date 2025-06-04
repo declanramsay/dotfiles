@@ -6,8 +6,6 @@ source $HOME/dotfiles/zsh/aliases.zsh
 source $HOME/dotfiles/zsh/completion.zsh
 source $HOME/dotfiles/zsh/key-bindings.zsh
 
-eval "$(starship init zsh)"
-
 # Load plugins
 source $HOME/dotfiles/zsh/plugins/zsh-shift-select.plugin.zsh
 
@@ -54,7 +52,45 @@ export GPG_TTY=$(tty)
 # Welcome!
 # fastfetch
 
-# Starship prompt (needs to be at the end)
-if [ $(command -v "starship") ]; then
-  source $HOME/dotfiles/zsh/prompt.zsh
-fi
+
+export PATH="/opt/homebrew/bin:$PATH"
+
+export AWS_VAULT_KEYCHAIN_NAME="login"
+
+export AWS_SESSION_TTL="12h"
+
+export GRADLE_USER_HOME="$HOME/.gradle"
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# . ~/.asdf/plugins/java/set-java-home.zsh
+
+# . ~/.asdf/plugins/golang/set-env.zsh
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+alias pc=$(which perctl)
+
+export GOPRIVATE=gitlab.personio-internal.de
+
+alias mc=~/dev/personio/monolith-cli
+
+# Configure Colima as Docker Host for applications which don't respect Docker Contexts
+export DOCKER_HOST=unix://${HOME}/.colima/default/docker.sock
+
+# Testcontainers should use the default Docker Socket
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+
+# Testcontainers should use the Colima VM instance local address as host
+export TESTCONTAINERS_HOST_OVERRIDE=$(colima ls -j | jq -r '.address // ""')
+
+# Set AWS_DEFAULT_PROFILE to dev by default
+export AWS_DEFAULT_PROFILE=dev
+export AWS_ECR_IGNORE_CREDS_STORAGE=true
+
+alias kubectx="kubectl-ctx"
+
+alias kubens="kubectl-ns"
+
+eval "$(starship init zsh)"
+

@@ -1,5 +1,5 @@
 font-family = 'FiraCode Nerd Font'
-font-size = 13
+font-size = 11
 
 # Disable ligatures and configure font features
 font-feature = calt
